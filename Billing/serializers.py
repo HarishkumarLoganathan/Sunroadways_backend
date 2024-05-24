@@ -38,10 +38,10 @@ class BillingSerializer(serializers.Serializer):
         validated_data['Billing_Lr_Number']=object_lr
         if validated_data['Payment_Client'] == "CONSIGNEE":
             payment_client_id=Clientinfo.objects.get(Client_GST=self.context.get('consginee_gst'))
-            print ("CONSIGNOR")
+            
         else:
             payment_client_id=Clientinfo.objects.get(Client_GST=self.context.get('consginor_gst'))
-            print ("CONSIGNOR")
+            
             
             
         validated_data.pop('Payment_Client')

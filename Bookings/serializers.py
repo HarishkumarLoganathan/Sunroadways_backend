@@ -42,7 +42,8 @@ class BookingsSerialers(serializers.Serializer):
         
         consignor_gst=self.context.get('consignor_gst')
         consignor_id=Clientinfo.objects.get(Client_GST=consignor_gst)
-        consignee_id=Clientinfo.objects.get(Client_GST=validated_data['Consignee_GST'])
+        print ("HELLO")
+        consignee_id=Clientinfo.objects.get(Client_GST=validated_data['Consignee_GST'])\
     
         validated_data['Client_Id']=consignor_id
         

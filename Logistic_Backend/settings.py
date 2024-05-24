@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-nlf*hfb6_nci$&&zcum&=o620@ckvl@uwz23ya8n3-d&3u(5kq
 DEBUG = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:4200'
+    'http://localhost:4200',
+    'http://localhost:62478'
 ]
 CORS_ALLOW_CREDENTIALS = True
 CSRF_COOKIE_SECURE = True
@@ -36,7 +37,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:4200',
     'http://localhost:51808',
     'http://localhost:58014',
-    'http://localhost:52471'# Add your Angular application's URL
+    'http://localhost:54903'# Add your Angular application's URL
     # Add your Angular application's URL
          # Add other whitelisted origins if needed
 ]
@@ -53,6 +54,9 @@ INSTALLED_APPS = [
     'Bookings',
     'Billing',
     'ClientRateTable',
+    'DriverInfo',
+    'Tripsheet',
+    'Consignment_History',
     'rest_framework',
     'rest_framework_simplejwt',
 

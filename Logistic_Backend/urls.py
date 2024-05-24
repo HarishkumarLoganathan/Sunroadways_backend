@@ -25,6 +25,7 @@ urlpatterns = [
     path('BlindManifest/',include('BlindManifestBooking.urls')),
     path('PartialManifest/',include('PartialManifest.urls')),
     path('Bookings/',include('Bookings.urls')),
-    path('Billing/',include('Billing.urls'))
+    path('Billing/',include('Billing.urls')),
+    path('Tripsheet/',include('Tripsheet.urls')),
     
 ]

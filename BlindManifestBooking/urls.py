@@ -5,6 +5,7 @@ urlpatterns = [
      path('BlindManifestBooking/',views.BlindManifestBooking),
      path('BlindManifestList/',views.BlindManifestList),
      path('OrderBooking/',views.BlindManifestOrderBooking),
+     path('BlindManifestBranchBooking/',views.BlindManifestBranchBooking)
      
      
      
